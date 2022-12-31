@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: none;
     grid-template-areas: 
-    "home portfolio about services contact";
+    "home about portfolio services contact";
     grid-template-areas: "icon menu";
     padding: 40px;
     flex-direction: column;
