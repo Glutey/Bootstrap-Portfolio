@@ -6,7 +6,7 @@
     grid-template-areas: "icon menu";
     padding: 40px;
     flex-direction: column;
-    background: url('../images/pawel-czerwinski-dgJT71cXlC4-unsplash\ \(1\).jpg');
+    /* background: url('../images/pawel-czerwinski-dgJT71cXlC4-unsplash\ \(1\).jpg'); */
     background-size: cover;
     border-bottom: solid rgb(187, 181, 181);
     border: outset;
@@ -17,11 +17,11 @@
 
   .header .menu {
     grid-area: menu;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     display: flex;
     grid-gap: 32px;
-    align-items: end;
-    justify-content: end;
+    align-items: right;
+    justify-content: right;
   }
 
   main {
@@ -47,7 +47,7 @@
     -webkit-text-stroke-width: thin;
   }
   
-  .menu > *:hover{
+  .menu > *:hover {
     font-weight: bold;
     color: rgb(91, 91, 155);
   }
@@ -60,16 +60,12 @@
     text-align: justify;
   }
   
-  .bio {
+  .row {
     font-family: Arial, Helvetica, sans-serif;
     padding: 40px;
     text-align: justify;
   }
-  
-  .info {
-    flex-direction: column;
-  }
-  
+
   
   #contact ul {
     display: flex;
@@ -78,7 +74,7 @@
   }
   
   section > * {
-    padding-right: 40px;
+    padding-right: 40px;            
     padding-bottom: 40px;
   
   }
@@ -88,9 +84,13 @@
     padding-bottom: 0px;
   }
 
-  .cards{
-    display: flex;
+  .card {
+    display: inline-block;
     justify-content: space-between;
+  }
+
+  .jumbotron {
+    background-image: url("..images\georgie-cobbs-muOHbrFGEQY-unsplash.jpg");
   }
   
   @media only screen and (max-width: 600px) {
@@ -106,4 +106,4 @@
       justify-items: normal;
     }
   }
-  /* navbar navbar-expand-lg navbar-light bg-light */
+  

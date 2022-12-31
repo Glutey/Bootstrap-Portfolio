@@ -6,127 +6,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- check that this link actually goes to the bootstrap portfolio as stated -->
     <meta content="https://glutey.github.io/Bootstrap-Portfolio/"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap-Portfolio</title>
 </head>
 
 <body>
     <!-- Nav bar section here -->
-    <nav class="header">
+   <!-- used a bootstrap 'Fixed' Navbar and changed the backgroud image/colour to visually accommodate the Hero -->
+    <nav class="header navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#home"><img class="icon" src="images/nav-icon.png"></a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="menu">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+
+            <li class="menu">
+              <a class="nav-link" href="#home">About</a>
+            </li>
+
+            <li class="menu">
+              <a class="nav-link disabled" href="#portfolio">Portfolio</a>
+            </li>
+
+            <li class="menu">
+              <a class="nav-link services" href="#services">Services</a>
+            </li>
+
+            <li class="menu">
+              <a class="nav-link contact" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+    <!-- <nav class="header">
+        <a class="navbar-brand" href="#home"><img class="icon" src="images/nav-icon.png"></a>
+        <div class="navbar-collapse">
           <ul class="menu">
             <li class="home"><a href="#home">Home</a>
-              <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+
             </li>
             <li class="about"><a href="#about">About</a>
-              <!-- <a class="nav-link" href="#">Features</a> -->
+              
             </li>
             <li class="portfolio"><a href="#portfolio">Portfolio</a>
-              <!-- <a class="nav-link" href="#">Pricing</a> -->
+              
             </li>
             <li class="services"><a href="#services">Services</a>
-              <!-- <a class="nav-link disabled" href="#">Disabled</a> -->
             </li>
             <li class="contact"><a href="#contact">Contact</a>
-                <!-- <a class="nav-link disabled" href="#">Disabled</a> -->
               </li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
 
 <!-- Hero Jumbotron section -->
+
+<!-- ### issue here is that i am unsure how to add a background image, how to size it correctly, also, what is a jumbotron? -->
+<!-- ### how do you get the images in your file to auto populate when you begin tyoing for soemthing like src, url etc -->
     <main>  
-      <div class="jumbotron">
+      <!-- <div class="jumbotron">
+        <img src="images/woliul-hasan-soLLR5gSqRI-unsplash.jpg" style="width: fit-content">
         <h1 class="display-4">Creating Memorable Spaces!</h1>
         <p class="lead">Express your business in the best way possible.</p>
         <hr class="my-4">
         <p>Lets see where we go with this.</p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#services" role="button">Learn more</a>
+          <a class="btn btn-primary btn-lg" href="#services" role="button">See Services</a>
         </p>
-      </div>
+      </div> -->
 
-      <!--  -->
+      <div class="b-example-divider"></div>
 
-      <!-- about section -->
-      <section class="bio" id="about">
-        <img src="images/Profile pic.jpg" alt="Photograph of the designer" height="400px" width="320px">
-        <span>
-          <h2>About</h2>
-          <br>
-          <p>I'm Tom, a Wed Designer from Staffordshire currently practicing with BootCamp's while at Wattisham Airfield in Ipswich.
-            I have been in the Army for 11 years but have made the decision to leave military life and change things up by dipping my toes into I.T by honing my skills as UI and UX developer!</p>
-          <br>
-          <p>Questions? Comments? Or interested in working together? Dont hesitiate to get in touch!</p>
-          <p>mr_tscreen@hotmail.com.</p>
-        </span>
-      </section>
-
-      <!-- portfolio section, use Bootstrap cards for each item of work, so three for us. The description should give a brief overview of the work.-->
-      <section class="info" id="portfolio">
-        <h2>Portfolio</h2>
-        <span class="cards">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Horiseon.jpg" height="200px" width="250" alt="multiple people in a board room">
-                
-                <div class="card-body">
-                  <h5 class="card-title">Horiseon</h5>
-                  <p class="card-text">Code Refactory and re-vamping of style is essential for anyone wanting to stay on point with the latest trends!.</p>
-                  <a href="https://glutey.github.io/code-refactory/" class="btn btn-primary">View</a>
-                </div>
-              </div>
-          
-            
-          <!--  <a href=""></a> will be added once the destinations have been created  -->
-           <div class="card" style="width: 18rem;">
-             <img class="card-img-top" src="images/john-schnobrich-FlPc9_VocJ4-unsplash.jpg" height="200px" alt="people pointing at a laptop screen">
-            
-             <div class="card-body">
-               <h5 class="card-title"></h5>
-               <p class="card-text">Coming Soon!.</p>
-               <a href="" class="btn btn-primary">View</a>
-             </div>
-           </div>   
-          
-          <!--  <a href=""></a> will be added once the destinations have been created  -->
-          <img class="card-img-top" src="images/kelly-sikkema-io0ZLYbu31s-unsplash.jpg" height="200px" alt="a person drawing">
-                
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text">New projects are on their way!</p>
-              <a href="" class="btn btn-primary">View</a>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
             </div>
           </div>
-          
-        </span>
-      </section>
+        </div>
+      </div>
 
-      <!-- A skills section
+      <!-- about section -->
+      <!-- ### should this be a card rather than a container fluid? unsure of how or when to use each. -->
+      <div class="container-fluid"> 
+        <section class="row" id="about">
+         <img src="images/Profile pic.jpg" alt="Photograph of the designer" height="400px" width="320px">
+          <span>
+            <h2>About</h2>
+            <br>
+            <p>I'm Tom, a Wed Designer from Staffordshire currently practicing with BootCamp's while at Wattisham Airfield in Ipswich.
+            I have been in the Army for 11 years but have made the decision to leave military life and change things up by dipping my toes into I.T by honing my skills as UI and UX developer!</p>
+            <br>
+            <p>Questions? Comments? Or interested in working together? Dont hesitiate to get in touch!</p>
+            <p>mr_tscreen@hotmail.com.</p>
+          </span>
+        </section>
+      </div>
 
-    List out the skills you expect to learn from the bootcamp.
 
+      <!-- Portfolio section using BootStrap Cards -->
+      <section id="portfolio">
+      
+        <div class="card" style="width:fit-content">
+          <img class="card-img-top" src="images/Horiseon.jpg" alt="multiple people in a board room">
+          <div class="card-body">
+            <h5 class="card-title">Horiseon</h5>
+            <p class="card-text">Code Refactory and re-vamping of style is essential for anyone wanting to stay on point with the latest trends!.</p>
+            <a href="https://glutey.github.io/code-refactory/" class="btn btn-primary">View</a>
+          </div>
+        </div>
 
+        <div class="card" style="width:fit-content">
+          <img class="card-img-top" src="images/john-schnobrich-FlPc9_VocJ4-unsplash.jpg" alt="people pointing at a laptop screen">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Coming Soon!</p>
+            <!-- A href will be added once the work has been generated to occupy the space -->
+            <a href="" class="btn btn-primary">View</a>
+          </div>
+        </div>
 
-    An about / contact section.
+        <div class="card" style="width:fit-content">
+          <img class="card-img-top" src="images/kelly-sikkema-io0ZLYbu31s-unsplash.jpg" alt="a person drawing">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">New Projects on their way!</p>
+            <!-- A href will be added once the work has been generated to occupy the space -->
+            <a href="" class="btn btn-primary">View</a>
+          </div>
+        </div>
+    </section>
 
-    An "About Me" section in the same row.
-
-
-
-    A footer section.
-
-
-    All hyperlinks should have a hover effect.
-
-
-    All buttons should display a box shadow upon hover. -->
 
       <!-- services section -->
-      <section class="products"  id="services">
+<!-- information describing the extend of services and processes will be added at a later date. -->
+
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      <h2 class="fw-normal">Web Development</h2>
+      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      <h2 class="fw-normal">Brand Identity</h2>
+      <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+      <br>
+      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      <h2 class="fw-normal">Code Refactory</h2>
+      <p>And lastly this, the third column of representative placeholder content.</p>
+      <br>
+      <br>
+      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    
+  </div><!-- /.row -->
+ 
+
+
+
+
+
+      <!-- <div class="card" style="width: 30rem;">
+        <img class="card-img-top" src="images/new-data-services-Ar-iTL4QKl4-unsplash.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SERVICES</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Web Development</li>
+          <li class="list-group-item">Brand Identity</li>
+          <li class="list-group-item">Code Refactory</li>
+          <li class="list-group-item">& Much More!</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Contact</a>
+        </div>
+      </div> -->
+
+
+
+
+
+
+
+
+
+      <!-- <section class="products"  id="services">
         <img src="images/new-data-services-Ar-iTL4QKl4-unsplash.jpg" width="300px" alt="numerous sheets of paper displaying text and information">
         <span>
           <h2>Services:</h2>
@@ -141,13 +234,51 @@
             <li>& Much more!</li>
           </ul>
           <br>
-      <!-- information describing the extend of services and processes will be added at a later date. -->
+      
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus id, nulla esse possimus officiis aliquam quisquam repellendus quia vero incidunt odio mollitia laboriosam eligendi tempora veritatis consectetur totam doloribus quod.</p>
         </span>
-      </section>
+      </section> -->
 
-      <!-- contact section -->
+      <!-- contact section --> 
+
+
       <img src="images/dose-media-bU6JyhSI6zo-unsplash.jpg" height="200px" width="500px" alt="clean white desktop with a notebook, plant and pen on top">
+      <section id="contact">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Contact: </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://github.com/Glutey/">
+                <img id="git" alt="Github" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjYgKDY3NDkxKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5naXRodWI8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iZ2l0aHViIiBmaWxsPSIjNzc3Nzc3Ij4KICAgICAgICAgICAgPHBhdGggZD0iTTEyLDAuMjk3IEM1LjM3LDAuMjk3IDAsNS42NyAwLDEyLjI5NyBDMCwxNy42IDMuNDM4LDIyLjA5NyA4LjIwNSwyMy42ODIgQzguODA1LDIzLjc5NSA5LjAyNSwyMy40MjQgOS4wMjUsMjMuMTA1IEM5LjAyNSwyMi44MiA5LjAxNSwyMi4wNjUgOS4wMSwyMS4wNjUgQzUuNjcyLDIxLjc4OSA0Ljk2OCwxOS40NTUgNC45NjgsMTkuNDU1IEM0LjQyMiwxOC4wNyAzLjYzMywxNy43IDMuNjMzLDE3LjcgQzIuNTQ2LDE2Ljk1NiAzLjcxNywxNi45NzEgMy43MTcsMTYuOTcxIEM0LjkyMiwxNy4wNTUgNS41NTUsMTguMjA3IDUuNTU1LDE4LjIwNyBDNi42MjUsMjAuMDQyIDguMzY0LDE5LjUxMiA5LjA1LDE5LjIwNSBDOS4xNTgsMTguNDI5IDkuNDY3LDE3LjkgOS44MSwxNy42IEM3LjE0NSwxNy4zIDQuMzQ0LDE2LjI2OCA0LjM0NCwxMS42NyBDNC4zNDQsMTAuMzYgNC44MDksOS4yOSA1LjU3OSw4LjQ1IEM1LjQ0NCw4LjE0NyA1LjAzOSw2LjkyNyA1LjY4NCw1LjI3NCBDNS42ODQsNS4yNzQgNi42ODksNC45NTIgOC45ODQsNi41MDQgQzkuOTQ0LDYuMjM3IDEwLjk2NCw2LjEwNSAxMS45ODQsNi4wOTkgQzEzLjAwNCw2LjEwNSAxNC4wMjQsNi4yMzcgMTQuOTg0LDYuNTA0IEMxNy4yNjQsNC45NTIgMTguMjY5LDUuMjc0IDE4LjI2OSw1LjI3NCBDMTguOTE0LDYuOTI3IDE4LjUwOSw4LjE0NyAxOC4zODksOC40NSBDMTkuMTU0LDkuMjkgMTkuNjE5LDEwLjM2IDE5LjYxOSwxMS42NyBDMTkuNjE5LDE2LjI4IDE2LjgxNCwxNy4yOTUgMTQuMTQ0LDE3LjU5IEMxNC41NjQsMTcuOTUgMTQuOTU0LDE4LjY4NiAxNC45NTQsMTkuODEgQzE0Ljk1NCwyMS40MTYgMTQuOTM5LDIyLjcwNiAxNC45MzksMjMuMDk2IEMxNC45MzksMjMuNDExIDE1LjE0OSwyMy43ODYgMTUuNzY0LDIzLjY2NiBDMjAuNTY1LDIyLjA5MiAyNCwxNy41OTIgMjQsMTIuMjk3IEMyNCw1LjY3IDE4LjYyNywwLjI5NyAxMiwwLjI5NyIgaWQ9IlBhdGgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg=="></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/thomas.screen.33/">
+                <img id="facebook" alt="Facebook" src="images/facebook.jpg" height="25px">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="mailto:mr_tscreen@hotmail.com">
+                <img id="email" alt="Email" src="images/email logo.jpg" height="25px"></a>
+            </li>
+            <li class="nav-item dropup">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropup</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <!-- <img src="images/dose-media-bU6JyhSI6zo-unsplash.jpg" height="200px" width="500px" alt="clean white desktop with a notebook, plant and pen on top">
       <section id="contact">
         <h2>Contact: </h2>
     
@@ -171,7 +302,7 @@
           </a>
           </li>
         </ul>
-      </section>
+      </section> -->
     </main>
     
 </body>
