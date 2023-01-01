@@ -1,12 +1,14 @@
 .header {
-    display: grid;
+    /* display: grid; */
+    display: flex;
     grid-template-rows: none;
     grid-template-areas: 
     "home about portfolio services contact";
     grid-template-areas: "icon menu";
     padding: 40px;
-    flex-direction: column;
-    /* background: url('../images/pawel-czerwinski-dgJT71cXlC4-unsplash\ \(1\).jpg'); */
+    /* flex-direction: column; */
+    flex-direction: right;
+    /* removed background image as it was unnecessary when using this new navbar code */
     background-size: cover;
     border-bottom: solid rgb(187, 181, 181);
     border: outset;
@@ -29,6 +31,7 @@
   }
 
   #home {
+    /* removed background color from original portfolio, looks slick and clean now */
     border-top: solid rgb(187, 181, 181);
     border-style: double;
     border-bottom: solid rgb(187, 181, 181);
@@ -40,10 +43,12 @@
     border-bottom: solid 1px #00000000;
   }
   
+  /* added this to make profile pic correct size */
   #me {
     width: 30%;
     height:30%
   }
+ 
 
   a {
     color: inherit;
@@ -53,10 +58,19 @@
   
   .menu > *:hover {
     font-weight: bold;
-    color: rgb(91, 91, 155);
+    /* changed the hover text colour change to white, since the new navbar is black */
+    color: white;
   }
   
   section {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    text-align: justify;
+  }
+
+  section #contact {
     display: flex;
     flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
@@ -89,19 +103,19 @@
   }
 
   .card {
+    /* changed the display from flex to inline-block, allows for the cards to be positioned side by side without issue */
     display: inline-block;
     justify-content: space-between;
   }
 
+  /* added card hover function to address the resizing requirement from the last challenge */
   .card:hover{
     transform: scale(1.05);
  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-  /* .jumbotron {
-    background-image: url("..images\georgie-cobbs-muOHbrFGEQY-unsplash.jpg");
-  } */
-  
+/* removed jumbotron entirely, new Hero code is a better fit */
+
   @media only screen and (max-width: 600px) {
     section {
       flex-direction: column;
